@@ -20,8 +20,8 @@ function gitCommand(command) {
 // Function to generate dates
 function generateDates() {
     const dates = [];
-    const months = [3]; // April and May
-    const days = [11];
+    const months = [4]; // April and May
+    const days = [1];
 
     for (const month of months) {
         for (const day of days) {
