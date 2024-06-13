@@ -21,7 +21,7 @@ function gitCommand(command) {
 function generateDates() {
     const dates = [];
     const months = [6]; // April and May
-    const days = [13,16];
+    const days = [13];
 
     for (const month of months) {
         for (const day of days) {
