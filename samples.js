@@ -1,22 +1,21 @@
-// // Write a function to reverse a given string.
+// 1 - Write a function to reverse a given string.
 
-// function reverseString(str) {
-//     return str.split('').reverse().join('');
-// }
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
 
 
-// console.log(reverseString("hello")); 
+console.log(reverseString("hello")); 
 
-// // Write a function that returns the largest number from an array of numbers.
+// 2-Write a function that returns the largest number from an array of numbers.
 
 function largestNumber(arr) {
     return Math.max(...arr);
 }
 
-// Example usage:
 console.log(largestNumber([1, 2, 3, 4, 5])); // Output: 5
 
-// Write a function that prints the numbers from 1 to 100. But for 
+// 3- Write a function that prints the numbers from 1 to 100. But for 
 // multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz".
 //  For numbers which are multiples of both three and five, print "FizzBuzz".
 
@@ -38,7 +37,7 @@ function fizzBuzz() {
 fizzBuzz();
 
 
-// Write a function to check if a given string is a palindrome.
+// 4- Write a function to check if a given string is a palindrome.
 
 function isPalindrome(str) {
     const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
@@ -47,7 +46,7 @@ function isPalindrome(str) {
 }
 console.log(isPalindrome("A man, a plan, a canal, Panama")); // Output: true
 
-// Write a function to remove duplicates from an array.
+// 5- Write a function to remove duplicates from an array.
 
 function removeDuplicates(arr) {
     return [...new Set(arr)];
@@ -56,7 +55,7 @@ function removeDuplicates(arr) {
 
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
 
-// Write a function to calculate the factorial of a number.
+// 6-  Write a function to calculate the factorial of a number.
 
 function factorial(n) {
     if (n === 0) {
@@ -68,7 +67,7 @@ function factorial(n) {
 
 console.log(factorial(5)); // Output: 120
 
-// Write a function to calculate the sum of all numbers in an array.
+// 7- Write a function to calculate the sum of all numbers in an array.
 function sumArray(arr) {
     return arr.reduce((sum, num) => sum + num, 0);
 }
@@ -76,7 +75,7 @@ function sumArray(arr) {
 
 console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
 
-// Write a function to merge two sorted arrays into a single sorted array.
+// 8- Write a function to merge two sorted arrays into a single sorted array.
 
 function mergeSortedArrays(arr1, arr2) {
     let mergedArray = [];
@@ -108,7 +107,7 @@ function mergeSortedArrays(arr1, arr2) {
 
 console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
 
-// Write a function to flatten a nested array.
+// 9- Write a function to flatten a nested array.
 
 function flattenArray(arr) {
     return arr.reduce((flat, toFlatten) => {
@@ -119,7 +118,7 @@ function flattenArray(arr) {
 
 console.log(flattenArray([1, [2, [3, [4]], 5]])); // Output: [1, 2, 3, 4, 5]
 
-// Write a function to find the index of a value in a sorted array using binary search.
+// 10-  Write a function to find the index of a value in a sorted array using binary search.
 
 function binarySearch(arr, target) {
     let left = 0;
